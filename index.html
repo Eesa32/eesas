@@ -1,31 +1,21 @@
-<!DOCTYPE html>
 <html>
-  <body>
-    <h2>JavaScript Class</h2>
-    <p>How to use a JavaScript Class.</p>
-    <p id="student1"></p>
-    <p id="student2"></p>
-    <script>
-      // creating a class 
-      class student {
-        constructor(name, year) {
-          this.name = name;
-          this.year = year;
-        }
-        // creating age method for class student
-        age(){
-          let date = new Date();
-          return date.getFullYear() - this.year;    
-        }
-      }
-      // use student class with two objects
-      student1 = new student("Riya", 2014);
-      document.getElementById("student1").innerHTML =
-      "My name is " + student1.name + ". I born in " + student1.year + ". And my age is  " + student1.age();
-      
-      student2 = new student("Tina", 2018);
-      document.getElementById("student2").innerHTML =
-      "My name is " + student2.name + ". I born in " + student2.year + ". And my age is  " + student2.age();
-    </script>
-  </body>
+<head>
+    <title>Eesas code</title>
+</head>
+<body>
+<h2>JavaScript Functions</h2>
+<p>Do a Calculation and then display the result.</p>
+<p id="demo"></p>
+<script>
+function add (a, b) {
+    return a + b;
+}
+function average(a, b){
+    return add (a, b) +0;
+}
+let result=average(7, 8);
+document.getElementById("demo").innerHTML=result
+
+</script>
+</body>
 </html>
