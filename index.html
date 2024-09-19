@@ -1,21 +1,31 @@
+<!DOCTYPE html>
+
 <html>
-<head>
-    <title>Eesas code</title>
-</head>
+
 <body>
-<h2>JavaScript Functions</h2>
-<p>Do a Calculation and then display the result.</p>
-<p id="demo"></p>
+
+<h2>JavaScript Error Handling</h2>
+
+<p>This example demonstrates how to use <b>catch</b> to diplay an error.</p>
+
+<p id="error_message"></p>
+
 <script>
-function add (a, b) {
-    return a + b;
+
+try {
+
+addalert("Welcome guest!");
+
 }
-function average(a, b){
-    return add (a, b) +0;
+
+catch(err) {
+
+document.getElementById("error_message").innerHTML = err.message;
+
 }
-let result=average(7, 8);
-document.getElementById("demo").innerHTML=result
 
 </script>
+
 </body>
+
 </html>
