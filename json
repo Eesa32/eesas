@@ -1,0 +1,44 @@
+<!-- This is main root for html page -->
+
+<html>
+
+<head>
+
+<title>My webpage</title>
+
+</head>
+
+<body>
+
+<p id="one"></p>
+
+<script>
+
+var a = {
+
+name:" hi my name is Eesa i am ",
+
+age:12.,
+
+gender:"Male",
+
+grade:10
+
+};
+
+
+//sending the data
+
+var b =JSON.stringify(a);
+
+//recieve the data
+
+var c = JSON.parse(b);
+
+document.getElementById("one").innerHTML = c.name + c.age
+
+</script>
+
+</body>
+
+</html>
