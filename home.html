@@ -1,0 +1,68 @@
+<html></html>
+<head>
+    <style>
+     .topnav{
+        overflow:hidden;
+        background-color: #333 ;
+     }
+     .topnav a{
+        float:left;
+        color: darkgoldenrod;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+     }
+     .topnav a:hover{
+         background-color: lightsteelblue;
+         color:darkgoldenrod;
+     }
+     .topnav a.active{
+        background-color:#ff0000;
+        color:black;
+     }
+     .carousal-container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     }
+    </style>
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="home.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="gallary.html">Gallery</a>
+        
+    </div>
+    <center>
+        <h1> My best minecraft memories i miss you minecraft. </h1>
+    <div class="carousel-container">
+
+        <img class="myslides" src="2.png" height="300" width="300">
+        
+        <img class="myslides" src="3.jpeg" height="300" width="300">
+        
+        <img class="myslides" src="1.jpg" height="300" width="300">
+        </div>
+    </center>
+      <script> 
+      var index = 0
+      function Minecraft(){
+        var i;
+        var x = document.getElementsByClassName("myslides");
+        for (i = 0; i < x.length; i++) {``
+         x[i].style.display = "none";
+        }
+        index++;
+        if (index > x.length) {
+         index = 1;
+        }
+        x[index - 1].style.display = "block";
+         setTimeout(Minecraft, 2000);
+        }  
+        Minecraft()
+      </script>
+</body>
+</html>
